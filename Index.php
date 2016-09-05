@@ -4,8 +4,13 @@
 </head>
 <body>
 
-<form>
-<!--el ?  en una url marca un parametro-->
+<form action = "destino.php" method = "POST">
+<!--method = "POST o GET" - Método HTTP empleado al enviar el formulario
+
+action = "url" - Indica la URL que se encarga de procesar los datos del formulario
+
+el ?  en una url marca un parametro-->
+
 <label>Nombre</label>
 <input type="text" placeholder = "texto grisado, placeholder"  name ="nombre">
 <input type="text" name ="numero uno">
@@ -25,9 +30,10 @@
 
 //los formularios por defecto se cargan a si mismo
 //isset pregunta si es null
-if(isset($_GET['nombre']))
+/*
+if(isset($_POST['nombre']))
 {
-echo $_GET['nombre'];
+echo $_POST['nombre'];
 
 }
 else 
