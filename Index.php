@@ -1,10 +1,15 @@
 <html>
 <head>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<!-- href hyper reference ruta del archivo-->
+		<link rel="stylesheet" type="text/css" href="animacion.css">
 	<title></title>
 </head>
 <body>
+<div class = "CajaInicio animated rubberBand">
+<form action = "destino.php" method = "POST" ID = "FormIngreso">
 
-<form action = "destino.php" method = "POST">
+
 <!--method = "POST o GET" - Método HTTP empleado al enviar el formulario
 
 action = "url" - Indica la URL que se encarga de procesar los datos del formulario
@@ -15,9 +20,9 @@ el ?  en una url marca un parametro-->
 <input type="text" placeholder = "texto grisado, placeholder"  name ="nombre">
 <input type="text" name ="numero uno">
 
-<input type = "submit">
+<input type = "submit" class ="MiBotonUTN" >
 </form>
-
+</div>
 <?php 
 
 //var dump para inspeccionar variables
