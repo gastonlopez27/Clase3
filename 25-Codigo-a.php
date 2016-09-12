@@ -40,6 +40,4 @@ echo "Complete Alto y Ancho";
 
 }
 
-
-
 ?>
